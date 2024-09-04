@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms Of Service</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #dd5bdd; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .navbar {
+            background: linear-gradient(to bottom, #a300cc, #dd5bdd 70%);
+            padding: 10px 10px 0 100px;
+            text-align: right;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            box-sizing: border-box;
+            height: 600px; 
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start; 
+            z-index: 1; 
+        }
+
+        .faq-container {
+            padding: 20px;
+            width: 80%;
+            max-width: 800px;
+            background-color: #ff9772;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 50px; 
+            z-index: 2; 
+            position: relative; 
+        }
+
+        .navbar a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            padding-top: 5px; 
+        }
+
+        .tos {
+            background-color: #ff694f; 
+            color: white;
+            border: none;
+            outline: none;
+            width: 100%;
+            padding: 15px;
+            text-align: left;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-bottom: 5px;
+        }
+
+        .tos.active, .tos:hover {
+            background-color: #DA70D6; 
+        }
+
+        .tos-content {
+            background-color: #DDA0DD;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding-left: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="https://mine-craft.store/index.html">Home</a>
+        <a href="https://mine-craft.store/store.html">Shop</a>
+    </div>
+
+    <div class="faq-container">
+        <button class="tos">Autosecure TOS</button>
+        <div class="tos-content">
+            <p>If u buy keys from someone without the reseller role no warranty will be provided!</p>
+            <p>To make sure you have full warranty please make sure the person your buying a key from has the reseller role or is a admin!</p>
+        </div>
+
+        <button class="tos">MFA TOS</button>
+        <div class="tos-content">
+            <p>No refunds only replacements will be provided</p>
+            <p>Pullback = Replace</p>
+            <p>Revoke = Replace</p>
+            <p>If the MFA is banned on any server no replacement will be provided</p>
+            <p>Lock warranty</p>
+            <p>All warranties for MFA are 72 Hours!</p>
+            <p><strong>NO REFUNDS WILL EVER BE PROVIDED!</strong></p>
+        </div>
+    </div>
+
+    <script>
+        const tosElements = document.querySelectorAll('.tos');
+        
+        tosElements.forEach(tos => {
+            tos.addEventListener('click', () => {
+                tos.classList.toggle('active');
+                const content = tos.nextElementSibling;
+                
+                if (tos.classList.contains('active')) {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                } else {
+                    content.style.maxHeight = null;
+                }
+            });
+        });
+    </script>
+</body>
+</html>

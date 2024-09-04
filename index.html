@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MFA Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #dd5bdd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .navbar {
+            background: linear-gradient(to bottom, #a300cc, #dd5bdd 70%);
+            padding: 10px 10px 0 100px;
+            text-align: right;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+            z-index: 1;
+        }
+
+        .navbar a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            padding-top: 5px;
+        }
+
+        .content-container {
+            padding: 20px;
+            width: 80%;
+            max-width: 800px;
+            background-color: #ff9772;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 50px;
+            z-index: 2;
+            position: relative;
+            text-align: center;
+        }
+
+        .purchase-button {
+            padding: 10px 20px;
+            background-color: #ff694f;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .purchase-button:hover {
+            background-color: #DA70D6;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="https://mine-craft.store/tos.html">TOS</a>
+    </div>
+
+    <div class="content-container">
+        <h1>StarSails MFA Store</h1>
+        <p>#1 Highest quality MFA's in the community!</p>
+        <br>
+        <script type="text/javascript" src="https://pay.sellsn.io/embed.min.js"></script>
+        <a href="store.html" class="purchase-button">Shop</a>
+    </div>
+</body>
+</html>

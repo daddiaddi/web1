@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MFA Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #dd5bdd; 
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .navbar {
+            background: linear-gradient(to bottom, #a300cc, #dd5bdd 70%);
+            padding: 10px 10px 0 100px;
+            text-align: right;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            box-sizing: border-box;
+            height: 600px; 
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start; 
+            z-index: 1; 
+        }
+
+        .navbar a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            padding-top: 5px; 
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 80px auto 0;
+            padding: 20px;
+            background-color: #ff9772;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            position: relative;
+            z-index: 2;
+        }
+
+        h2 {
+            text-align: center;
+            color: #a300cc;
+            margin-bottom: 40px;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+
+        .box {
+            background-color: #ff694f;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+            text-align: center;
+        }
+
+        .box p {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .box input[type="submit"],
+        .box button[data-sellsn-sid] {
+            padding: 10px 20px;
+            background-color: #DA70D6;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .box input[type="submit"]:hover,
+        .box button[data-sellsn-sid]:hover {
+            background-color: #a300cc;
+        }
+
+        .box input[type="text"],
+        .box input[type="password"] {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #fff;
+            background-color: #333;
+            color: #fff;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="https://mine-craft.store/index.html">Home</a>
+        <a href="https://mine-craft.store/tos.html">TOS</a>
+    </div>
+
+    <div class="container">
+        <h2>MFA Store</h2>
+        <div class="dashboard">
+            <div class="box">
+                <p>NON Ranked Minecraft Account Full Access</p>
+                <script type="text/javascript" src="https://pay.sellsn.io/embed.min.js"></script>
+                <button data-sellsn-sid="c19f86c3-be95-4263-8a0e-c393c75133f4" data-sellsn-pid="3a9d05ef-9f85-4e02-963f-792a1370f3ca">Purchase</button>
+            </div>
+            <div class="box">
+                <p>VIP Ranked Minecraft Account Full Access</p>
+                <script type="text/javascript" src="https://pay.sellsn.io/embed.min.js"></script>
+                <button data-sellsn-sid="c19f86c3-be95-4263-8a0e-c393c75133f4" data-sellsn-pid="83b62081-47f2-4c3e-ab87-5ed47bc7055f">Purchase</button>
+            </div>
+            <div class="box">
+                <p>VIP+ Ranked Minecraft Account Full Access</p>
+                <script type="text/javascript" src="https://pay.sellsn.io/embed.min.js"></script>
+                <button data-sellsn-sid="c19f86c3-be95-4263-8a0e-c393c75133f4" data-sellsn-pid="aeb07464-0b3a-4d4d-aa7f-d9104b3a2df5">Purchase</button>
+            </div>
+            <div class="box">
+                <p>MVP Ranked Minecraft Account Full Access</p>
+                <script type="text/javascript" src="https://pay.sellsn.io/embed.min.js"></script>
+                <button data-sellsn-sid="c19f86c3-be95-4263-8a0e-c393c75133f4" data-sellsn-pid="3edbd189-91be-4512-a1c3-f917ddc882b1">Purchase</button>
+            </div>
+            <div class="box">
+                <p>Autosecure</p>
+                <script type="text/javascript" src="https://pay.sellsn.io/embed.min.js"></script>
+                <button data-sellsn-sid="c19f86c3-be95-4263-8a0e-c393c75133f4" data-sellsn-pid="13f662d4-5994-4706-8499-2565acabcca9">Purchase</button>
+            </div>
+            <div class="box">
+                <p>MVP+ Ranked Minecraft Account Full Access</p>
+                <script type="text/javascript" src="https://pay.sellsn.io/embed.min.js"></script>
+                <button data-sellsn-sid="c19f86c3-be95-4263-8a0e-c393c75133f4" data-sellsn-pid="f87bc2a4-c43a-43ac-be3d-8dfd522ce8b5">Purchase</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
